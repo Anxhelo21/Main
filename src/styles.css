@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #019601 !important;
+}
+
+.custom-container {
+  background-color: #e6e6e6;
+  padding: 2rem !important;
+  border-radius: 1rem;
+}
+
+.submit-btn {
+  padding: 7px;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: none;
+}
+
+.invalid {
+  border: 2px solid red !important;
+}
+
+.invalid-text {
+  display: none;
+  color: red;
+}

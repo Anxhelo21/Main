@@ -1,4 +1,7 @@
+import { AppHttpClientService } from './services/app-http-client.service';
 import { Component } from '@angular/core';
+import { Person } from './interfaces/Person';
+import { appendFile } from 'fs';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'MyFirstAngularProject';
+
+  persons: Person[] = []
+
+
+  onFormSubmitHandler(person: Person) {
+    this.persons.push(person);
+  }
 }
